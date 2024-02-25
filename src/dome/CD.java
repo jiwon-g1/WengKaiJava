@@ -4,18 +4,14 @@ public class CD extends Item {
     private String title;
     private String artist;
     private int numOfTracks;
-    private int playingTime;
-    private boolean gotIt;
-    private String comment;
+
 
     public CD(String title, String artist,
               int numOfTacks, int playingTime,String comment) {
-        super(title);
+        super(title,playingTime,false,comment); //调用Item的构造器来吧这个title参数传递给它
 //        this.title = title;
         this.artist = artist;
         this.numOfTracks = numOfTacks;
-        this.playingTime = playingTime;
-        this.comment = comment;
     }
     public void print() {
         System.out.println("CD "+title+": "+artist);
