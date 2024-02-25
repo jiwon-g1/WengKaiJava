@@ -21,7 +21,6 @@ public class Item {
     }
     //父类的东西都继承给了子类
 
-
     public void print() {
         System.out.print(title);
 
